@@ -3,6 +3,6 @@ interface Window {
   gtag: (
     command: "config" | "event",
     targetId: string,
-    config?: Gtag.ConfigParams | Gtag.EventParams,
+    config?: Gtag.ConfigParams | Gtag.EventParams
   ) => void;
 }
