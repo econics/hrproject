@@ -1,8 +1,8 @@
-import React from 'react';
-import Image from 'next/image';
-import NavBar from '@/components/NavBar';
-import SdrPerformance from '@/components/SdrPerformance';
-import AdminDash from '@/components/AdminDash';
+import React from "react";
+import Image from "next/image";
+import NavBar from "@/components/NavBar";
+import SdrPerformance from "@/components/SdrPerformance";
+import AdminDash from "@/components/AdminDash";
 
 export default function Home() {
   return (

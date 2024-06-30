@@ -1,20 +1,20 @@
-import React, { ReactNode } from 'react';
+import React, { ReactNode } from "react";
 import {
   TooltipProvider,
   Tooltip,
   TooltipTrigger,
   TooltipContent,
-} from '@/components/ui/tooltip';
-import Link from 'next/link';
-import { Sheet, SheetTrigger, SheetContent } from '@/components/ui/sheet';
-import { Button } from '@/components/ui/button';
+} from "@/components/ui/tooltip";
+import Link from "next/link";
+import { Sheet, SheetTrigger, SheetContent } from "@/components/ui/sheet";
+import { Button } from "@/components/ui/button";
 import {
   Breadcrumb,
   BreadcrumbList,
   BreadcrumbItem,
   BreadcrumbLink,
-} from '@/components/ui/breadcrumb';
-import { Input } from '@/components/ui/input';
+} from "@/components/ui/breadcrumb";
+import { Input } from "@/components/ui/input";
 import {
   DropdownMenu,
   DropdownMenuTrigger,
@@ -22,12 +22,12 @@ import {
   DropdownMenuLabel,
   DropdownMenuSeparator,
   DropdownMenuItem,
-} from '@/components/ui/dropdown-menu';
-import { Card, CardHeader, CardTitle, CardContent } from '@/components/ui/card';
+} from "@/components/ui/dropdown-menu";
+import { Card, CardHeader, CardTitle, CardContent } from "@/components/ui/card";
 
 interface ExtendedSheetContentProps {
   children?: ReactNode;
-  side?: 'top' | 'right' | 'bottom' | 'left';
+  side?: "top" | "right" | "bottom" | "left";
   className?: string;
 }
 
