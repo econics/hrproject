@@ -16,12 +16,13 @@ import { Button } from "@/components/ui/button";
 import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/avatar";
 import { Sheet, SheetTrigger, SheetContent } from "@/components/ui/sheet";
 import React from "react"; // Add semicolon
+import LogoPrimary from "./LogoPrimary";
 
 export default function NavBar() {
   return (
     <header className="bg-background flex h-16 w-full shrink-0 items-center px-4 md:px-6">
-      <Link href="#" className="mr-6 flex items-center" prefetch={false}>
-        <RulerIcon className="h-6 w-6" />
+      <Link href="/" className="mr-6 flex items-center" prefetch={false}>
+        <LogoPrimary className="h-6 w-6" />
         <span className="sr-only">HR Company</span>
       </Link>
       <NavigationMenu className="hidden lg:flex">

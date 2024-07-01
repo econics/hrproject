@@ -1,8 +1,8 @@
-// app/layout.tsx
 import { Inter } from "next/font/google";
 import React from "react";
 import Script from "next/script";
 import "./globals.css";
+import NavBar from "@/components/NavBar";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -40,7 +40,19 @@ export default function RootLayout({
           }}
         />
       </head>
-      <body className={inter.className}>{children}</body>
+      <body className={inter.className}>
+        <NavBar />
+        <main
+          style={{
+            paddingTop: "80px",
+            paddingLeft: "16px",
+            paddingRight: "16px",
+          }}
+        >
+          {children}
+        </main>{" "}
+        {/* Added inline styles for padding */}
+      </body>
     </html>
   );
 }
